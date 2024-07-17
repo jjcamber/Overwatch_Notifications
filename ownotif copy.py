@@ -5,9 +5,9 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-email = "joshcamberg@gmail.com"
-passw = "gzhw bbut mwen apps"
-phonenum = '4806224336@vtext.com'
+email = "@gmail.com"
+passw = ""
+phonenum = 'vtext.com'
 
 # Function to check if a color is within an acceptable range of the target color
 def is_color_similar(color1, color2, tolerance=30):
