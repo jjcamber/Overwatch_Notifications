@@ -38,7 +38,6 @@ def monitor_pixel(x, y, target_hex, tolerance=30):
         rgb_im = screenshot.convert('RGB')
         pixel_color = rgb_im.getpixel((0, 0))
         if is_color_similar(pixel_color, target_color, tolerance):
-            # print("Similar color detected at the specified pixel.")
             send_email()
             break
         sleep(0.1)
@@ -47,6 +46,12 @@ def monitor_pixel(x, y, target_hex, tolerance=30):
 x_coordinate = 1845
 y_coordinate = 1405
 target_hex = "B3601F"
+
+# If you want to stay tabbed in instead of minimizing the window
+# Pixel coordinates and target color
+# x_coordinate = 100
+# y_coordinate = 540
+# target_hex = "1E253A"
 
 # Start monitoring the pixel
 monitor_pixel(x_coordinate, y_coordinate, target_hex)
