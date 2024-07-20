@@ -14,7 +14,7 @@ carriers = {
 
 email = "@gmail.com"
 passw = ""
-phonenum = '@vtext.com'
+phonenum = '12345678@vtext.com'
 
 # Function to check if a color is within an acceptable range of the target color
 def is_color_similar(color1, color2, tolerance=30):
